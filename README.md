@@ -19,5 +19,5 @@
 * **dict.txt.big：** Jieba字典
 * **mode_changed：** json，bot控制目前模式的暫存
 * **QAProcess.ipynb：** 建模型使用
-* **vectorterms：** 建模型使用
-* **cat_mapping：** 建模型使用
+* **vectorterms：** json，建模型使用
+* **cat_mapping：** json，建模型使用
