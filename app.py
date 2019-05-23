@@ -67,7 +67,7 @@ def handle_message(event):
                     StickerSendMessage(package_id=11538, sticker_id=51626527)
                 ]
         )
-    elif "怎麼樣的人" in message or "luke" in message or "about me" in message or "關於我" in message or "個性":
+    elif "怎麼樣的人" in message or "luke" in message or "about me" in message or "關於我" in message or "個性" in message:
         line_bot_api.reply_message(
                 event.reply_token, [
                     TextSendMessage(text='text message'),
@@ -348,9 +348,26 @@ def award():
     )
     return award_Carousel_template
 
-# 未完成
 def thesis():
-    return
+    thesis_Carousel_template = TemplateSendMessage(
+        alt_text='Carousel template',
+            template=CarouselTemplate(
+            columns=[
+                CarouselColumn(
+                    thumbnail_image_url='https://example.com/preview.jpg',
+                    title='title message',
+                    text='text message',
+                    actions=[
+                        URITemplateAction(
+                            label='Link',
+                            uri=''
+                        )
+                    ]
+                )
+            ]
+        )
+    )
+    return thesis_Carousel_template
 
 def certificate():
     certificate_Carousel_template = TemplateSendMessage(
